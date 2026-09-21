@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Notion 學習累積</title>
+  <meta name="description" content="以每週累積與每日柱狀圖追蹤 Notion 學習紀錄">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23081220'/%3E%3Cpath d='M13 46V35h8v11m7 0V25h8v21m7 0V14h8v32' fill='none' stroke='%2368e0cf' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div>
+        <div class="status"><i></i> NOTION 已連接</div>
+        <h1>學習累積</h1>
+        <p>「記錄」資料庫同步快照 · <span id="syncDate">2026-09-21</span></p>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="學習紀錄摘要">
+      <article><strong>2,488</strong><span>累積紀錄</span></article>
+      <article><strong>406</strong><span>活躍日期</span></article>
+      <article><strong>1</strong><span>今日紀錄</span></article>
+      <article><strong>2025-05-30</strong><span>開始追蹤</span></article>
+    </section>
+
+    <section class="panel cumulative-panel">
+      <div class="panel-head">
+        <div><span>累積分布</span><h2>每週累積學習紀錄</h2></div>
+        <div class="total"><strong>2,486</strong><small>筆有日期紀錄</small></div>
+      </div>
+      <div id="cumulativeChart" class="chart cumulative-chart" aria-label="每週累積學習紀錄圖"></div>
+      <p class="hint">移到柱狀圖上可查看該週新增量與累積量；手機可左右滑動。</p>
+    </section>
+
+    <section class="panel daily-panel">
+      <div class="panel-head">
+        <div><span>近期節奏</span><h2>近 30 日每日紀錄</h2></div>
+        <div class="total"><strong>7.9</strong><small>近 30 日平均／日</small></div>
+      </div>
+      <div id="dailyChart" class="chart daily-chart" aria-label="近三十日每日學習紀錄圖"></div>
+      <p class="hint">藍色為每日紀錄，綠色為今天。</p>
+    </section>
+  </main>
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
