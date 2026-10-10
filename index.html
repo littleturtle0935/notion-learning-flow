@@ -6,7 +6,7 @@
   <title>Notion 學習累積</title>
   <meta name="description" content="以每週累積與每日柱狀圖追蹤 Notion 學習紀錄">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23081220'/%3E%3Cpath d='M13 46V35h8v11m7 0V25h8v21m7 0V14h8v32' fill='none' stroke='%2368e0cf' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261010-layout2">
 </head>
 <body>
   <main class="shell">
@@ -24,13 +24,6 @@
       <article><strong>3</strong><span>最新日期紀錄（10/10）</span></article>
       <article><strong>2025-05-30</strong><span>開始追蹤</span></article>
     </section>
-
-    <details class="context-panel" open>
-      <summary><span>近期脈絡</span><small>模糊分類 · 最近 14 日</small></summary>
-      <div class="context-tags" aria-label="近期學習脈絡">
-        <span>數理分析</span><span>生命科學</span><span>語言練習</span><span>音樂與人文</span><span>身體與運動</span>
-      </div>
-    </details>
 
     <section class="panel cumulative-panel">
       <div class="panel-head">
@@ -50,16 +43,6 @@
       <div id="dailyChart" class="chart daily-chart" aria-label="近三十日每日學習紀錄圖"></div>
       <p class="hint">藍色為每日紀錄，綠色為今天；本次查詢無未填日期項目。</p>
     </section>
-    <section class="distribution-panel panel">
-      <div class="panel-head"><div><span>近期脈絡</span><h2>學科分布</h2></div></div>
-      <div class="distribution-list" aria-label="近期學科相對分布">
-        <div><span>數理分析</span><i><b style="width:88%"></b></i></div>
-        <div><span>生命科學</span><i><b style="width:74%"></b></i></div>
-        <div><span>語言練習</span><i><b style="width:66%"></b></i></div>
-        <div><span>音樂與人文</span><i><b style="width:48%"></b></i></div>
-        <div><span>身體與運動</span><i><b style="width:36%"></b></i></div>
-      </div>
-    </section>
     <section class="recent-panel panel">
       <div class="panel-head"><div><span>近期紀錄</span><h2>最近學習</h2></div></div>
       <div class="recent-list" aria-label="最近學習的模糊分類">
@@ -76,6 +59,6 @@
     </div>
   </main>
   <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
-  <script src="app.js?v=20261008a"></script>
+  <script src="app.js?v=20261010-layout2"></script>
 </body>
 </html>
