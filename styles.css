@@ -21,6 +21,9 @@ h1{font-size:clamp(1.6rem,3vw,2.35rem);letter-spacing:-.04em}
 .context-tags{display:flex;flex-wrap:wrap;gap:8px;padding:0 18px 16px}
 .context-tags span{padding:6px 10px;border:1px solid rgba(104,224,207,.2);border-radius:999px;color:#b9d4e7;background:rgba(104,224,207,.06);font-size:.78rem}
 .recent-panel{margin-bottom:18px}
+.lower-grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(300px,.85fr);gap:18px;align-items:stretch}
+.lower-grid .panel+.panel{margin-top:0}
+.lower-grid .recent-panel{margin-bottom:0}
 .privacy-note{color:var(--muted);font-size:.75rem}
 .recent-list{border-top:1px solid var(--line)}
 .recent-list div{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;padding:10px 2px;border-bottom:1px solid var(--line);font-size:.86rem}
@@ -48,5 +51,5 @@ h1{font-size:clamp(1.6rem,3vw,2.35rem);letter-spacing:-.04em}
 .tooltip{position:fixed;z-index:10;pointer-events:none;opacity:0;transform:translate(12px,12px);background:#020912;border:1px solid #2a4b68;border-radius:10px;padding:10px 12px;color:var(--text);font-size:.78rem;line-height:1.55;box-shadow:0 12px 35px rgba(0,0,0,.4);transition:opacity .1s}
 .tooltip.show{opacity:1}
 .tooltip strong{display:block;color:var(--aqua);font-size:.84rem}
-@media(max-width:760px){.shell{width:min(100% - 24px,1440px);padding-top:22px}.top{align-items:flex-start;flex-direction:column}.stats{grid-template-columns:1fr 1fr}.panel{padding:16px}.panel-head{align-items:flex-start}.cumulative-chart{height:320px}.daily-chart{height:260px}.daily-chart svg{min-width:720px}.daily-chart{overflow-x:auto}.hint{font-size:.75rem}}
+@media(max-width:760px){.shell{width:min(100% - 24px,1440px);padding-top:22px}.top{align-items:flex-start;flex-direction:column}.stats{grid-template-columns:1fr 1fr}.panel{padding:16px}.panel-head{align-items:flex-start}.lower-grid{grid-template-columns:1fr}.cumulative-chart{height:320px}.daily-chart{height:260px}.daily-chart svg{min-width:720px}.daily-chart{overflow-x:auto}.hint{font-size:.75rem}}
 @media(max-width:420px){.stats article{padding:15px}.stats strong{font-size:1.3rem}.panel-head{flex-direction:column}.total{text-align:left}}
