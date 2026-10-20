@@ -52,6 +52,7 @@ h1{font-size:clamp(1.6rem,3vw,2.35rem);letter-spacing:-.04em}
 .daily-chart svg{width:100%}
 .chart-label{fill:#7fa5c5;font-size:11px}
 .chart-value{fill:#eaf5ff;font-size:10px;font-weight:800}
+.chart text{letter-spacing:0;font-variant-numeric:tabular-nums}
 .hint{color:var(--muted);font-size:.78rem;margin-top:10px}
 .bar{transition:opacity .15s,filter .15s;cursor:crosshair}
 .bar:hover{filter:brightness(1.28);opacity:1}
